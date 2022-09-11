@@ -1,0 +1,193 @@
+object Form1: TForm1
+  Left = 815
+  Height = 535
+  Top = 115
+  Width = 714
+  Caption = 'Кинотеатр'
+  ClientHeight = 535
+  ClientWidth = 714
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.2.0'
+  object ButSave_hall: TBitBtn
+    Left = 13
+    Height = 30
+    Top = 376
+    Width = 91
+    Caption = 'Добавить зал'
+    OnClick = ButSave_hallClick
+    TabOrder = 0
+  end
+  object Edit_hall_size: TEdit
+    Left = 16
+    Height = 23
+    Top = 248
+    Width = 98
+    TabOrder = 1
+  end
+  object label_hall_size: TLabel
+    Left = 16
+    Height = 15
+    Top = 224
+    Width = 100
+    Caption = 'Вместимость зала'
+    ParentColor = False
+  end
+  object MemoHall: TMemo
+    Left = 16
+    Height = 188
+    Top = 18
+    Width = 136
+    OnChange = MemoHallChange
+    ReadOnly = True
+    TabOrder = 2
+  end
+  object MemoFilm: TMemo
+    Left = 192
+    Height = 188
+    Top = 18
+    Width = 184
+    Lines.Strings = (
+      ''
+    )
+    OnChange = MemoHallChange
+    ReadOnly = True
+    TabOrder = 3
+  end
+  object Edit_film_name: TEdit
+    Left = 190
+    Height = 23
+    Top = 248
+    Width = 186
+    TabOrder = 4
+  end
+  object Edit_film_genre: TEdit
+    Left = 190
+    Height = 23
+    Top = 304
+    Width = 186
+    TabOrder = 5
+  end
+  object label_film_name: TLabel
+    Left = 192
+    Height = 15
+    Top = 224
+    Width = 99
+    Caption = 'Название фильма'
+    ParentColor = False
+  end
+  object label_film_genre: TLabel
+    Left = 190
+    Height = 15
+    Top = 280
+    Width = 78
+    Caption = 'Жанр фильма'
+    ParentColor = False
+  end
+  object ButSave_film: TBitBtn
+    Left = 192
+    Height = 30
+    Top = 376
+    Width = 123
+    Caption = 'Добавить фильм'
+    OnClick = ButSave_filmClick
+    TabOrder = 6
+  end
+  object btn_save_file: TButton
+    Left = 272
+    Height = 25
+    Top = 472
+    Width = 87
+    Caption = 'Сохранить'
+    OnClick = btn_save_fileClick
+    TabOrder = 7
+  end
+  object btn_load_file: TButton
+    Left = 368
+    Height = 25
+    Top = 472
+    Width = 87
+    Caption = 'Загрузить'
+    OnClick = btn_load_fileClick
+    TabOrder = 8
+  end
+  object MemoSale: TMemo
+    Left = 394
+    Height = 188
+    Top = 18
+    Width = 329
+    ReadOnly = True
+    TabOrder = 9
+  end
+  object Edit_sale_id_film: TEdit
+    Left = 440
+    Height = 23
+    Top = 248
+    Width = 65
+    TabOrder = 10
+  end
+  object Edit_sale_id_hall: TEdit
+    Left = 440
+    Height = 23
+    Top = 304
+    Width = 65
+    TabOrder = 11
+  end
+  object label_sale_id_hall: TLabel
+    Left = 440
+    Height = 15
+    Top = 280
+    Width = 65
+    Caption = 'Номер зала'
+    ParentColor = False
+  end
+  object label_sale_id_film: TLabel
+    Left = 440
+    Height = 15
+    Top = 224
+    Width = 85
+    Caption = 'Номер фильма'
+    ParentColor = False
+  end
+  object Edit_sale_time: TEdit
+    Left = 544
+    Height = 23
+    Top = 248
+    Width = 104
+    OnChange = Edit_sale_timeChange
+    TabOrder = 12
+  end
+  object label_sale_time: TLabel
+    Left = 544
+    Height = 15
+    Top = 224
+    Width = 35
+    Caption = 'Время'
+    ParentColor = False
+    OnClick = label_sale_timeClick
+  end
+  object label_sale_id_place: TLabel
+    Left = 544
+    Height = 15
+    Top = 280
+    Width = 35
+    Caption = 'Место'
+    ParentColor = False
+  end
+  object Edit_sale_id_place: TEdit
+    Left = 544
+    Height = 23
+    Top = 304
+    Width = 56
+    TabOrder = 13
+  end
+  object ButSave_sale: TBitBtn
+    Left = 440
+    Height = 30
+    Top = 376
+    Width = 123
+    Caption = 'Добавить продажу'
+    OnClick = ButSave_saleClick
+    TabOrder = 14
+  end
+end
